@@ -31,7 +31,7 @@ https://github.com/cmdwtf/imgui_toggle
 Install at least,
 
    ```sh
-   pacman -S mingw-w64-ucrt-x86_64-{make,gcc,glfw,pkgconf}
+   pacman -S make mingw-w64-ucrt-x86_64-{gcc,glfw,pkgconf}
    ```
 
 1. Linux OS (Ubuntu / Debian families)  
