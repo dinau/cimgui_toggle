@@ -18,5 +18,4 @@ jobs:
       - run: |
           sudo apt install xorg-dev libopengl-dev libgl1-mesa-dev
           sudo apt install libglfw3 libglfw3-dev
-          sudo apt install libsdl2-dev
-      - run: make
+          make

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [cimgui_toggle](#cimgui_toggle)
+- [Prerequisites](#prerequisites)
+- [Build and run](#build-and-run)
+- [Custom window](#custom-window)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+![alt](https://github.com/dinau/cimgui_toggle/actions/workflows/windows.yml/badge.svg)
+![alt](https://github.com/dinau/cimgui_toggle/actions/workflows/linux.yml/badge.svg) 
+
 ### cimgui_toggle 
 
 ---
