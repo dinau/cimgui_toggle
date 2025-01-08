@@ -168,12 +168,12 @@ const char* const LabelA11yOnDefault = "1";
 // The default a11y string used when the toggle is off.
 const char* const LabelA11yOffDefault = "0";
 
-/* a */ bool igToggle(         const char* label, bool* v, const ImVec2 size);
-/* b */ bool igToggleFlag(     const char* label, bool* v, ImGuiToggleFlags flags, const ImVec2 size);
-/* c */ bool igToggleAnim(     const char* label, bool* v, ImGuiToggleFlags flags, float animation_duration, const ImVec2 size);
-/* d */ bool igToggleCfg(      const char* label, bool* v, const ImGuiToggleConfig config);
-/* e */ bool igToggleRound(    const char* label, bool* v, ImGuiToggleFlags flags, float frame_rounding, float knob_rounding, const ImVec2 size);
-/* f */ bool igToggleAnimRound(const char* label, bool* v, ImGuiToggleFlags flags, float animation_duration, float frame_rounding, float knob_rounding, const ImVec2 size);
+/* a */ bool Toggle(         const char* label, bool* v, const ImVec2 size);
+/* b */ bool ToggleFlag(     const char* label, bool* v, ImGuiToggleFlags flags, const ImVec2 size);
+/* c */ bool ToggleAnim(     const char* label, bool* v, ImGuiToggleFlags flags, float animation_duration, const ImVec2 size);
+/* d */ bool ToggleCfg(      const char* label, bool* v, const ImGuiToggleConfig config);
+/* e */ bool ToggleRound(    const char* label, bool* v, ImGuiToggleFlags flags, float frame_rounding, float knob_rounding, const ImVec2 size);
+/* f */ bool ToggleAnimRound(const char* label, bool* v, ImGuiToggleFlags flags, float animation_duration, float frame_rounding, float knob_rounding, const ImVec2 size);
 
 
 /* a */ //IMGUI_API bool Toggle(const char* label, bool* v, const ImVec2& size = ImVec2());

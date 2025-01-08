@@ -9,7 +9,7 @@
 #include <GL/gl.h>
 
 #include "cimgui_toggle.h"
-#include "cimgui_toggle_preset.h"
+#include "cimgui_toggle_presets.h"
 #include "setupFonts.h"
 #include "themeGold.h"
 
@@ -20,6 +20,9 @@
 #define igColorEdit3 igColorEdit3_Str
 #define igButton igButton_Str
 #endif
+
+#define igToggle     Toggle
+#define igToggleAnim ToggleAnim
 
 GLFWwindow *window;
 
@@ -38,30 +41,30 @@ static void imgui_toggle_simple()
 
   ImVec2 sz = {40.0, 20.0};
 	// a default and default animated toggle
-	igToggle("Default Toggle", &values[value_index++], sz);
-	igToggleAnim("Animated Toggle", &values[value_index++], ImGuiToggleFlags_Animated, 1.0f,  sz);
+	Toggle("Default Toggle", &values[value_index++], sz);
+	ToggleAnim("Animated Toggle", &values[value_index++], ImGuiToggleFlags_Animated, 1.0f,  sz);
 
 	// this toggle draws a simple border around it's frame and knob
-	igToggleAnim("Bordered Knob", &values[value_index++], ImGuiToggleFlags_Bordered, 1.0f, sz);
+	ToggleAnim("Bordered Knob", &values[value_index++], ImGuiToggleFlags_Bordered, 1.0f, sz);
 
 	// this toggle draws a simple shadow around it's frame and knob
 	igPushStyleColor_Vec4(ImGuiCol_BorderShadow, green_shadow);
-	igToggleAnim("Shadowed Knob", &values[value_index++], ImGuiToggleFlags_Shadowed, 1.0f, sz);
+	ToggleAnim("Shadowed Knob", &values[value_index++], ImGuiToggleFlags_Shadowed, 1.0f, sz);
 
 	// this toggle draws the shadow & and the border around it's frame and knob.
-	igToggleAnim("Bordered + Shadowed Knob", &values[value_index++], ImGuiToggleFlags_Bordered | ImGuiToggleFlags_Shadowed, 1.0f, sz);
+	ToggleAnim("Bordered + Shadowed Knob", &values[value_index++], ImGuiToggleFlags_Bordered | ImGuiToggleFlags_Shadowed, 1.0f, sz);
 	igPopStyleColor(1);
 
 	// this toggle uses stack-pushed style colors to change the way it displays
 	igPushStyleColor_Vec4(ImGuiCol_Button, green);
 	igPushStyleColor_Vec4(ImGuiCol_ButtonHovered, green_hover);
-	igToggle("Green Toggle", &values[value_index++], sz);
+	Toggle("Green Toggle", &values[value_index++], sz);
 	igPopStyleColor(2);
 
-	igToggleFlag("Toggle with A11y Labels", &values[value_index++], ImGuiToggleFlags_A11y, sz);
+	ToggleFlag("Toggle with A11y Labels", &values[value_index++], ImGuiToggleFlags_A11y, sz);
 
 	// this toggle shows no label
-	igToggle("##Toggle With Hidden Label", &values[value_index++], sz);
+	Toggle("##Toggle With Hidden Label", &values[value_index++], sz);
 }
 
 static void imgui_toggle_example() {
@@ -75,7 +78,7 @@ static void imgui_toggle_example() {
 	// a toggle that will allow the user to view the demo for simple toggles or a custom toggle
 	static bool show_custom_toggle = false;
   ImVec2 sz = {40.0f, 20.0f};
-	igToggle( show_custom_toggle ? "Showing Custom Toggle" : "Showing Simple Toggles" , &show_custom_toggle, sz);
+	Toggle( show_custom_toggle ? "Showing Custom Toggle" : "Showing Simple Toggles" , &show_custom_toggle, sz);
 	igSeparator();
 
 	if (show_custom_toggle) {
@@ -97,7 +100,7 @@ static void imgui_toggle_custom(void) {
   }
 
 	igNewLine();
-	igToggleCfg("Customized Toggle", &toggle_custom, config);
+	ToggleCfg("Customized Toggle", &toggle_custom, config);
 
 	igNewLine();
 

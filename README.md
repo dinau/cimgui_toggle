@@ -51,14 +51,14 @@ Install at least,
    git clone --recurse-submodules https://github.com/dinau/cimgui_toggle
    ```
 
-1. Build and run  C langugae demo
+1. Build and run  C language demo
 
    ````
    cd cimgui_toggle/demo/c
    make run
    ````
 
-1. Build and run  C++ langugae demo
+1. Build and run  C++ language demo
 
    ````
    cd cimgui_toggle/demo/cpp
