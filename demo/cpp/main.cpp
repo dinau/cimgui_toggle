@@ -43,8 +43,7 @@ static void imgui_toggle_example()
 	// the default would otherwise use your theme's frame background colors.
 	ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0.45f, 0.45f, 0.45f, 1.0f));
 	ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, ImVec4(0.65f, 0.65f, 0.65f, 1.0f));
-
-	// a toggle that will allow the user to view the demo for simple toggles or a custom toggle
+// a toggle that will allow the user to view the demo for simple toggles or a custom toggle
 	static bool show_custom_toggle = false;
 	ImGui::Toggle(
 		show_custom_toggle ? "Showing Custom Toggle" : "Showing Simple Toggles"
